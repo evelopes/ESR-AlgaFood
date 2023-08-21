@@ -12,19 +12,19 @@ import com.algaworks.algafood.di.notificacao.NivelUrgencia;
 import com.algaworks.algafood.di.notificacao.Notificador;
 import com.algaworks.algafood.di.notificacao.TipoDoNotificador;
 
-@Component
+//@Component
 public class AtivacaoClienteService {
 	
 	@TipoDoNotificador(NivelUrgencia.SEM_URGENCIA)
 	@Autowired
 	private Notificador notificador;
 	
-	@PostConstruct
+	//@PostConstruct
 	public void init() {
 		System.out.println("INIT");
 	}	
 	
-	@PreDestroy
+	//@PreDestroy
 	public void destroy() {
 		System.out.println("DESTROY");
 	}
